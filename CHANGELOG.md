@@ -3,24 +3,29 @@
 A simple list of changes to my QuickNote CLI project.
 
 ## January 12, 2026
-- Added colored output using colored library
-- Success messages now display in green bold text
-- Error messages display in red
-- Improved timestamp formatting to include full date, time and made it cleaner
-- Removed welcome banner for cleaner output
-- Updated README roadmap to mark colored text as complete
+- **Added Interactive Mode:** The program now enters a live input loop if no command-line arguments are provided.
+- **Improved CLI Arguments:** Used argument joining to allow multi-word notes without needing quotation marks.
+- **Enhanced Time Accuracy:** Switched from UTC to Local timezone for more relevant note timestamps.
+- **Input Validation:** Added logic to ignore empty entries and prevent cluttered log files.
+- **Interactive UI Improvements:**
+    - Added a persistent `>` blue prompt for better user feedback.
+    - Added a `quit` command to exit the interactive session.
+- **Styling:**
+    - Added colored output using the `colored` library.
+    - Success messages now display in green bold text.
+    - Error and exit hints display in red.
+- **Cleanup:** Removed the welcome banner and updated the README roadmap.
 
 ## January 11, 2026
-- Added timestamps to notes using chrono library
-- Each note now includes date and time
-- Improved error handling in the code
+- Added timestamps to notes using `chrono` library.
+- Each note now includes date and time.
+- Improved error handling in the code.
 
 ## January 10, 2026
-- Created README with project description
-- Added features list and roadmap
+- Created README with project description.
+- Added features list and roadmap.
 
 ## January 9, 2026
-- Initial project setup
-- Basic note-taking functionality
-- Notes are saved to notes.txt file
-- Added command-line argument parsing
+- Initial project setup.
+- Basic note-taking functionality (saving to `notes.txt`).
+- Added command-line argument parsing.
