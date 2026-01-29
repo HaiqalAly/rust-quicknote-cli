@@ -2,6 +2,12 @@
 
 A simple list of changes to my QuickNote CLI project.
 
+## January 30, 2026
+- **Refactoring:** Split `notes.rs` into separate modules (`read_note.rs`, `save_note.rs`, `take_note.rs`) for better code organization and maintainability.
+
+## January 29, 2026
+- **CI Integration:** Add a simple CI for Rust taken from GitHub actions template/suggested workflows.
+
 ## January 18, 2026
 - **Note Display:** Notes are now parsed and formatted. Timestamps are visually separated from the message content using a dimmed style for better focus on the text.
 
