@@ -2,6 +2,11 @@
 
 A simple list of changes to my QuickNote CLI project.
 
+## February 3, 2026
+- **New Feature: Delete Note:** Added ability to delete specific notes using their ID.
+- **New Feature: Clear Screen:** Added `clear` command to clean the terminal window.
+- **UX Improvement:** The main menu now runs in a loop (REPL), allowing multiple actions without restarting the program.
+
 ## January 30, 2026
 - **Refactoring:** Split `notes.rs` into separate modules (`read_note.rs`, `save_note.rs`, `take_note.rs`) for better code organization and maintainability.
 

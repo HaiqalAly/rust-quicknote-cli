@@ -1,7 +1,6 @@
 use std::io::Error;
 use colored::Colorize;
 
-
 pub fn read_note(path: &str) -> Result<(), Error> {
     if !std::path::Path::new(path).exists() {
         println!("{}", "File not found! Please add a note first.".red().bold());
@@ -14,12 +13,14 @@ pub fn read_note(path: &str) -> Result<(), Error> {
     if content.is_empty() {
         println!("{}", "Notes empty".red().bold());
     } else {
-        for line in content.lines() {
+        for (index, line) in content.lines().enumerate() {
+            let id = index + 1;
+
             if let Some((message, time)) = line.rsplit_once('[') {
                 let time = time.trim_end_matches(']');
-                println!("{} {} {}", ">".blue(), format!("[{}]", time).dimmed(), message.trim());
+                println!("{} {} {} {}", id.to_string().cyan(), ">".blue(), format!("[{}]", time).dimmed(), message.trim());
             } else {
-                println!("{} {}", ">".blue(), line);
+                println!("{} {} {}", id.to_string().cyan(), ">".blue(), line);
             }
         }
     }

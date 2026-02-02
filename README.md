@@ -21,16 +21,19 @@ Now includes menu to either add new notes or view existing ones.
 git clone https://github.com/HaiqalAly/rust-cli-quicknote.git
 cd rust-cli-quicknote
 
-# Interactive mode (Recommended)
+# Run the program
 cargo run
 # 1. Enter save location (or press Enter for default)
-# 2. Choose action: 'list' (view notes) or 'add' (new notes)
+# 2. Choose action: 'list', 'add', 'delete', or 'clear'
 # 3. If 'add': Type notes at the '>' prompt (type 'quit' to exit)
+# 4. If 'delete': Enter the ID of the note to remove
 ```
 
 ## Features
 - **View Notes**: Read your saved notes directly from the terminal
-- **Interactive Menu**: Choose between listing or adding notes
+- **Delete Notes**: Remove old or unwanted notes by ID
+- **Interactive Menu**: Persistent loop to list, add, or delete notes continuously
+- **Clear Screen**: strict 'clear' command to keep your workspace tidy
 - **Custom Save Location**: Choose where to store your notes on startup
 - **Interactive Mode**: Enter a persistent session to quickly add multiple notes without restarting
 - **Automatic Timestamps**: Each note is prefixed with [YYYY-MM-DD HH:MM:SS]
