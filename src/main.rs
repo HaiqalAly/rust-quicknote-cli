@@ -38,7 +38,7 @@ fn main() -> Result<(), Error> {
             "list".yellow(),
             "add".green(),
             "delete".red(),
-            "clear/cls".purple()
+            "clear".purple()
         );
         print!("{} ", ">".blue());
         io::stdout().flush()?;

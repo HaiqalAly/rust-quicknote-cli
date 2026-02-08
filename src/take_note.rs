@@ -9,7 +9,7 @@ pub fn take_note(save_location: &str) -> Result<(), Error> {
         "quit".red().bold()
     );
     loop {
-        print!("\n{} ", ">".blue());
+        print!("{} ", ">".blue());
         io::stdout().flush()?;
         let mut input = String::new();
         std::io::stdin().read_line(&mut input)?;

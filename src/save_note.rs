@@ -1,5 +1,4 @@
 use chrono::{self, DateTime, Local};
-use colored::Colorize;
 use std::fs::OpenOptions;
 use std::{io::Error, io::Write};
 
@@ -11,6 +10,5 @@ pub fn save_note(message: &str, path: &str) -> Result<(), Error> {
 
     // TODO: could add tags or categories for organizing notes better
     writeln!(file, "{} [{}]", message, time)?;
-    println!("{} {} {}", ">".blue(), "Note saved at".green().bold(), path);
     Ok(())
 }
