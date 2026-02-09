@@ -23,10 +23,6 @@ cd rust-cli-quicknote
 
 # Run the program
 cargo run
-# 1. Enter save location (or press Enter for default)
-# 2. Choose action: 'list', 'add', 'delete', or 'clear'
-# 3. If 'add': Type notes at the '>' prompt (type 'quit' to exit)
-# 4. If 'delete': Enter the ID of the note to remove
 ```
 
 ## Features

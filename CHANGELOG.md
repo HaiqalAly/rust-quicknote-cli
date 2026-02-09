@@ -2,6 +2,13 @@
 
 A simple list of changes to my QuickNote CLI project.
 
+## February 8, 2026
+- **Style:** Update prompt formatting
+
+## February 7, 2026
+- **Style:** Fix formatting.
+- **Chore:** Add MIT license.
+
 ## February 3, 2026
 - **New Feature: Delete Note:** Added ability to delete specific notes using their ID.
 - **New Feature: Clear Screen:** Added `clear` command to clean the terminal window.
