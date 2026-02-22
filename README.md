@@ -18,8 +18,8 @@ Now includes menu to either add new notes or view existing ones.
 **Usage**:
 ```bash
 # Clone the repo
-git clone https://github.com/HaiqalAly/rust-cli-quicknote.git
-cd rust-cli-quicknote
+git clone https://github.com/HaiqalAly/quicknote.git
+cd quicknote
 
 # Run the program
 cargo run
